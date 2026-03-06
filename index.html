@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számkitaláló Játék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="jatek-doboz">
+        <h1>Számkitaláló</h1>
+        <p>Gondoltam egy számra 1 és 100 között.</p>
+
+        <input type="number" id="tippem" placeholder="Írd be a tippet">
+        <br>
+        <button id="ellenor-gomb" onclick="ellenorzes()">Mehet!</button>
+
+        <p id="uzenet"></p>
+        
+        <p>Próbálkozások: <span id="szamlalo">0</span></p>
+        
+        <button id="ujra-gomb" onclick="ujJatek()" style="display: none;">Új játék</button>
+    </div>
+
+    <script src="kulon.js"></script>
+</body>
+</html>
